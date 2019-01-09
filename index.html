@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ScoreBoard-Virtual, marcador de goles personalizado">
+  <meta name="author" content="Emanuel Ceriana (emanuelceriana@gmail.com)">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>ScoreBoard-Virtual</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+  <body>
+
+    <div id="container"></div>
+    
+    <script src="js/three.min.js"></script>
+		<script src="js/photo-sphere-viewer.min.js"></script>
+    <script>
+    var div = document.getElementById('container');
+			var PSV = new PhotoSphereViewer({
+					panorama: 'path/to/snow.jpg',
+					container: div,
+          time_anim: 3000,
+          loading_img: 'https://raw.githubusercontent.com/mistic100/Photo-Sphere-Viewer/3.1.0/example/photosphere-logo.gif',
+					navbar: false,
+					navbar_style: {
+						backgroundColor: 'rgba(58, 67, 77, 0.7)'
+					},
+				});
+    </script>  
+     
+  </body>
+</html>
